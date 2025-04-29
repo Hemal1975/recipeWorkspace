@@ -1,0 +1,65 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: pink;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" class="navbar-brand">Recipe Book</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+        <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a style="cursor: pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
+            <li><a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<!-- 
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: yellowgreen !important;">
+  <div class="container-fluid">
+    <a routerLink="/" class="navbar-brand">Recipe Book</a>
+    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="/recipes">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/shopping-list">Shopping List</a>
+        </li>
+        <li><a style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
+            <li><a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg m-3" style="background-color: yellowgreen;" data-bs-theme="light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="nav-link active" aria-current="page" routerLink="/">Recipe Book</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/recipes">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="//shopping-list">Shopping List</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-primary mr-2" type="button" (click)="onSaveData()" style="margin-right: 10px;">Save Data</button>
+        <button class="btn btn-info" type="button" (click)="onFetchData()">Fetch Data</button>
+      </form>
+    </div>
+  </div>
+</nav>
